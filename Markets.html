@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link rel="stylesheet" href="css/style2New.css" type='text/css' media='all'>
+    
+    <link rel="icon" href="img/bolsas-de-compra.png">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&family=Chelsea+Market&family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&family=Chelsea+Market&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+   
+    <script src="js/markets.js"></script>
+
+</head>
+
+<body>
+    <!-- Sección del menú de navegación -->
+    <header>
+
+        <nav class="navbar bg-light fixed-top border">
+            <div class="container-fluid">
+              
+                <img id="slide-in-top" class="logo2" src="img/el-mandado.svg" title="HOME">
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" class="titular10">SuperMarket</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html"><img id="slide-in-top" src="img/listalogo2.png" title="lista" class="navlogo1">Tu Lista de Compra </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Frecuentes.html"><img src="img/marketlogo3.png" title="market"
+                                        class="navlogo1">Productos
+                                    Frecuentes</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="Markets.html"><img src="img/marketlogo4.png" title="market"
+                                        class="navlogo1">Agregar
+                                    SuperMercados</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="navcarrusel">
+                                  
+                                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active" >
+                                        <img src="img/catalogo.webp" class="d-block w-100" alt="..." id="carruselwiii">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/catalogo 2.jpg" class="d-block w-100" alt="..." id="carruselwiii">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/catologo3.jpg" class="d-block w-100" alt="..." id="carruselwiii">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/catalogo4.jpg" class="d-block w-100" alt="..." id="carruselwiii">
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+                                </a>
+
+                            </form>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    
+            <section id="listadesupermercados">
+                <div class="container">
+
+                  
+                    <h1>Super Mercados Disponibles</h1>
+
+                    <div id="MarketSugeridos">
+                        
+                            
+                            <div id="desplegable">
+                                <input type="checkbox" id="boton" /> 
+                                <label class="labelbutton3" for="boton"></label>
+                                <div class="desplegarEste" id="slide-in-left"> <p></p>
+                                <form><input class="aggsupermarket1" type="text" id="agSuperMarket" required oninput="this.value = this.value.replace(/[^a-zA-Z0-9-áéíóúÁÉÍÓÚñÑÄËÏÖÜäëïöü]/,' ')" placeholder="Agrega tu Supermercado" onkeypress="13">
+                                <button type="submit" id="boton_agregar" class="aggsupermarket2" class="mas" onclick="market()">Agregar</button> </form>
+                            </div>
+                        
+                      
+                      
+                            <!-- <a href="mercados.html">"AQUI"</a></h3></p> -->
+
+                    </div>
+                    <script>
+                     let DefaultMarketsImages='["CARREFOUR", "MERCADONA", "LIDL", "COSTCO", "DIA", "HIPERCOR", "LECLERC", "EROSKI", "CONDIS", "ALCAMPO", "AHORRAMAS", "ALDI", "EL CHINO FACHA", "EL CHINO"]'
+            for (i=0; i<DefaultMarkets.length; i++)
+            {
+
+                
+                
+                document.write('<figure id="'+DefaultMarkets[i]+'" class="bordesuper centro wow fadeInUp" data-wow-delay="0.2s" value="'+DefaultMarkets[i]+'"><img id="imgM'+i+'"src="img/'+DefaultMarkets[i]+'.png" alt="'+DefaultMarkets[i]+'"><h3 class="titularproduct">'+DefaultMarkets[i]+'</h3><input type="submit" id="agregarmarket'+i+'" value="Favoritos" class="mas" onclick="marketFav(this)"><input type="image" class="basura" onclick="borrarMarket(this)" src="img/remove.png" value="'+DefaultMarkets[i]+'"></figure>');
+                let revLocalStorage= JSON.parse(localStorage.getItem(favoriteMarketskey));
+                if (revLocalStorage.indexOf(DefaultMarkets[i]) != -1){
+                   document.getElementById('agregarmarket'+i).value= "Quitar de Favoritos";
+                 document.getElementById('agregarmarket'+i).className= "mas2";
+                  
+                }
+
+                let productMinusculas= DefaultMarkets[i].toUpperCase();
+          //console.log(productMinusculas); 
+          let comparaImg= DefaultMarketsImages.indexOf(productMinusculas);
+          //console.log(comparaImg); 
+            if(comparaImg === -1)
+            {
+             let imageP= document.getElementById("imgM"+i).src="img/shopping-cart.png";
+             
+            // imageP.setAttribute("href", "img/shopping-cart.png");
+
+
+            }
+
+            }
+            </script>
+
+           <!-- <figure id="AHORRAMAS" class="centro wow fadeInUp" data-wow-delay="0.4s">
+                <img src="img/logoahorramas.png" alt="ahorramas">
+                <h3>AhorraMas</h3>
+
+                <button id="agregarmarket1" value="AHORRAMAS" class="mas" onclick="market(this)">Agregar</button>
+
+            </figure>
+
+            <figure id="DIA" class="centro wow fadeInUp" data-wow-delay="0.6s">
+                <img src="img/supermercado-dia-1-759x500.jpg" alt="dia">
+                <h3>Día</h3>
+
+                <button id="agregarmarket2" value="DIA" class="mas" onclick="market(this)" type="submit">Agregar</button>
+  
+                
+            </figure>
+
+
+            <figure id="aldi" class="centro wow fadeInUp" data-wow-delay="0.2s">
+                <img src="img/logo-aldi.jpg" alt="aldi">
+                <h3>Aldi </h3>
+
+                <button id="agregarmarket3" value="ALDI" class="mas" onclick="market(this)">Agregar</button>
+
+
+            </figure>
+
+
+            <div id="alcampo" class="centro wow fadeInUp bordesuper" data-wow-delay="0.8s">
+                <img src="img/alcampo-squarelogo-1578341903739.png" alt="alcampo">
+                <h3>Alcampo</h3>
+
+                <button id="agregarmarket4" value="ALCAMPO" class="mas" onclick="market(this)">Agregar</button>
+                
+            </div>
+
+            
+
+
+
+            <figure id="leclerc" class="centro wow fadeInUp" data-wow-delay="0.4s">
+                <img src="img/logo-e63fa132c474c4c4823969022fe2d47c19cd2929ff6248ca9aa43c646a04a483.png" alt="leclerc">
+                <h3>Leclerc</h3>
+
+                <button id="agregarmarket5" value="LECLERC" class="mas" onclick="market(this)">Agregar</button>
+
+
+            </figure>
+            <figure id="hipercor" class="centro wow fadeInUp" data-wow-delay="0.6s">
+                <img src="img/hipercor.jpg" alt="hipercor">
+                <h3>Hipercor</h3>
+
+                <button id="agregarmarket6" value="HIPERCOR" class="mas" onclick="market(this)">Agregar</button>
+
+
+            </figure>
+            <div id="eroski" class="centro wow fadeInUp" data-wow-delay="0.8s">
+                <img src="img/eroski.jpg" alt="eroski">
+                <h3>Eroski</h3>
+
+                <button id="agregarmarket7" value="EROSKI" class="mas" onclick="market(this)">Agregar</button>
+
+            </div>
+
+            <figure id="lidl" class="centro wow fadeInUp" data-wow-delay="0.2s">
+                <img src="img/lidl.png" alt="lidl">
+                <h3>Lidl </h3>
+
+                <button id="agregarmarket8" value="LIDL" class="mas" onclick="market(this)">Agregar</button>
+
+
+            </figure>
+            <figure id="mercadona" class="centro wow fadeInUp" data-wow-delay="0.4s">
+                <img src="img/mercadona.jpg" alt="mercadona">
+                <h3>Mercadona</h3>
+
+                <button id="agregarmarket9" value="MERCADONA" class="mas" onclick="market(this)">Agregar</button>
+
+            </figure>
+            <figure id="condis" class="centro wow fadeInUp" data-wow-delay="0.6s">
+                <img src="img/condis-1024x677 (1).jpg" alt="condis">
+                <h3>Condis</h3>
+
+                <button id="agregarmarket10" value="CONDIS" class="mas" onclick="market(this)">Agregar</button>
+
+
+            </figure>
+            <div id="costco" class="centro wow fadeInUp" data-wow-delay="0.8s">
+                <img src="img/costco-baby-registry-review-article (1).jpg" alt="costco">
+                <h3>Costco</h3>
+
+                <button id="agregarmarket11" value="COSTCO" class="mas" onclick="market(this)">Agregar</button>
+
+            </div>
+-->
+
+
+
+        </div>
+    </section><!-- FIN Sección lista de supermercados -->
+
+
+
+   
+</body>
+
+
+
+
+</html>

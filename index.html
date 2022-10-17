@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperMarket</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/bolsas-de-compra.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&family=Chelsea+Market&family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/inicio.js"></script>
+</head>
+<body class="bodyClass">
+  <div class="divBody">
+  <!--<div class="container-fluid">-->
+    <header>
+
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+      
+        <img id="slide-in-top" class="logo2" src="img/el-mandado.svg" title="HOME"> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" class="titular10">SuperMarket</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><img src="img/listalogo2.png"
+                    title="lista" class="navlogo1">Tu Lista de la Compra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Frecuentes.html"><img src="img/marketlogo3.png" title="market"
+                    class="navlogo1">Productos
+                  Frecuentes</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Markets.html"><img src="img/marketlogo4.png" title="market"
+                    class="navlogo1">Agregar
+                  SuperMercados</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">
+
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/catalogo.webp" class="d-block w-100" alt="..." id="carruselwiii">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/catalogo 2.jpg" class="d-block w-100" alt="..." id="carruselwiii">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/catologo3.jpg" class="d-block w-100" alt="..." id="carruselwiii">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/catalogo4.jpg" class="d-block w-100" alt="..." id="carruselwiii">
+                      </div>
+                    </div>
+                  </div>
+
+                </a>
+
+              </li>
+
+              </form>
+
+          </div>
+        </div>
+</div>
+
+    </nav>
+
+
+  </header>
+  
+   <div class="container-busqueda">
+        <form >
+        <input autocomplete="off" id="agProduct" list="productos" name="productos" type="text" class="lista" 
+            oninput="this.value = this.value.replace(/[^a-zA-Z0-9-áéíóúÁÉÍÓÚñÑÄËÏÖÜäëïöü]/,' ')" placeholder="Agregar Producto" onkeypress="13">
+            
+            <!-- Nuestro input no admite caracteres especiales-->
+          <!--<script>
+            document.getElementById("agProduct").value = "";
+          </script>-->
+
+          <button id="" class="mas" onclick="producto()">Agregar producto</button>
+        </form> 
+        
+      </div>
+
+  <div class="titular120">
+  
+ 
+   
+     
+  </div>
+  
+ 
+        <div class="contenido" id="aggprincipal">
+
+        </div>
+
+      
+          <datalist id="productos"></datalist>
+          <script> // Nos crea una lista paralela dentor del datalist, para tener una sugerencia obtenida de la base de datos (se debe modificar para que se almacene en un array diferente y no sufra cambios cuando se eliminen o editen valores de nuestra lista principal)
+
+            for (let i = 0; i < aggpFrecuente.length; i++) {
+              let option = document.createElement("option");
+              productos.appendChild(option);
+              option.innerHTML = aggproducto[i];
+
+            }
+
+          </script>
+        
+        <div id="2slide-in-bottom" class="contApp">
+
+      <div id="listaProduct">
+        <script> //Este script muestra nuestros productos en un lista, tantas veces como indices existan en nuestro Array
+          //Se crean dos inputs, uno está oculto para mantener el valor orignal en caso de edición
+          //El input(botón) de ID: "editB", llama a la función editar (), e influye sobre su parentElement.
+
+          let muestraProductos=["arroz", "azucar", "fairy", "helado", "naranja", "harina", "huevos", "leche",	"lentejas", "cafe", "cerveza", "arepa", "tacos"];
+        if (!localStorage.getItem("MercadosFavoritos"))
+
+        {
+          document.write('<div id="slide-in-bottom" class="iniTitle">Antes de empezar te sugerimos ir a configurar tus Supermercados Favoritos<a href="Markets.html"><input class="LogoInicial" type="image" src="img/shop.png"><a></div>');
+
+        }
+
+        else {
+          for (j = 0; j < aggproducto.length; j++) 
+    { 
+
+      
+            document.write('<div id="col1" class="row col-lg-10 mx-auto"><div id="prodenLista" class="col-lg-2 mx-auto" value="prodList"><a href="img/' + aggproducto[j].toLowerCase() +'.png" id="imgProd'+j+'"><img id="imgPro'+j+'" class="imgProduct" src="img/' + aggproducto[j].toLowerCase() + '.png"></a></div><div id="descriProduct" class="col-lg-6 mx-auto"><div class="descriProduct2"><p class="textP">' + aggproducto[j][0].toUpperCase()+aggproducto[j].toLowerCase().slice(1)+ '</p></div><div  class="descriProduct3"><input type="image" src="img/editar.png" id="editB" onclick= "editar(this)"><input type="hidden" id="hiddenInput" class="editable" readonly value="' + aggproducto[j][0].toUpperCase()+aggproducto[j].toLowerCase().slice(1) + '"><input id="borrarReg" value="' + aggproducto[j] + '" type="image" src="img/basura.png" class="basura" onclick="borrar(this)"></div></div><div id="listDer" class="col-lg-2 mx-auto" value="'+aggproducto[j]+'"><input type="image" class="pFavorito" src="img/prodFavOff.png" onclick="pFrecuentes(this)" name="' + aggproducto[j]+'"><input type="image" src="img/shop.png" value="' + aggproducto[j]+'" class="relative" id="boton'+j+'" onclick="MarketFavs(this)"><input type="hidden" id="'+j+'" class="editable" value="' + aggproducto[j]+'"></div></div>'); 
+
+       
+      
+          let productMinusculas= aggproducto[j].toLowerCase();
+          //console.log(productMinusculas); 
+          let comparaImg= muestraProductos.indexOf(productMinusculas);
+          //console.log(comparaImg); 
+          if(comparaImg === -1)
+        {
+          let imageP= document.getElementById("imgProd"+j);
+          //console.log(imageP.getAttribute("href"));
+         imageP.setAttribute("href", "img/food.png");
+
+        let imagePro= document.getElementById("imgPro"+j).src= "img/food.png";
+
+        }
+      
+      
+        if (JSON.parse(localStorage.getItem(prodFAVkey)).indexOf(aggproducto[j])== -1)
+        {
+          document.getElementById("boton"+j).previousElementSibling.src="img/prodFavOff.png";
+        }
+        else
+        {
+          document.getElementById("boton"+j).previousElementSibling.src="img/prodFavOn.png";
+        }
+
+      
+      }    
+
+    }
+</script>
+</div>
+  </div>
+  </div>
+ </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous">
+  </script>
+
+
+</div>
+</div></div>
+</body>
+
+</html>
